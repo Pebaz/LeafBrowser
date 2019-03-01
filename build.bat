@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed -i .\leaf-icon.ico main.py

@@ -1,0 +1,12 @@
+# PyInstaller
+build/*/*.toc
+build/*/*.pkg
+build/*/*.pyz
+build/*/base_library.zip
+
+# Thumbnail SQLite Database
+Thumbs.db
+
+# Python Compiled Files/Folders
+*.py[co]
+__pycache__/

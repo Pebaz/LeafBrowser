@@ -70,6 +70,7 @@ class Browser(QTabWidget):
         if index != self.count() - 1:
             if self.count() == 2:
                 self.close()
+            self.setCurrentIndex(self.count() - 3)
             self.removeTab(index)
 
     def tab_changed(self, index):
