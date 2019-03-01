@@ -1,10 +1,10 @@
-import sys
+import sys, time
 from urllib.parse import quote_plus as qp
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QUrl
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5 import QtWebEngineWidgets, QtNetwork
-from PyQt5.Qt import pyqtSlot, pyqtSignal, QIcon
+from PyQt5.Qt import pyqtSlot, pyqtSignal, QIcon, Qt
 
 class BrowserTab(QWidget):
     def __init__(self, page='http://www.google.com', socks5=True):
@@ -100,6 +100,7 @@ def main(args):
     app = QApplication(sys.argv)
     browser = Browser()
     browser.show()
+
     try:
         return_code = app.exec_()
     except:
