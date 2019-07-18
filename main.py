@@ -5,7 +5,7 @@ from PyQt5.QtCore import QUrl, QByteArray
 from PyQt5.QtGui import QKeySequence
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5 import QtWebEngineWidgets, QtNetwork
-from PyQt5.Qt import pyqtSlot, pyqtSignal, QIcon, Qt, QWebEngineHttpRequest
+from PyQt5.Qt import pyqtSlot, pyqtSignal, QIcon, Qt
 
 class AuthPopup(QDialog):
     def __init__(self):
